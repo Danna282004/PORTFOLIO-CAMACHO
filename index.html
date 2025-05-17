@@ -1,55 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>My Profile</title>
-<link rel="stylesheet" href="portfolio.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-  <nav>
-    <a href="#" class="nav-link active" data-target="home">Home</a>
-    <a href="#" class="nav-link" data-target="about">About</a>
-    <a href="#" class="nav-link" data-target="contact">Contact</a>
-  </nav>
-</header>
+  <header>
+    <nav>
+      <a href="#" class="nav-link active" data-target="home">Home</a>
+      <a href="#" class="nav-link" data-target="about">About</a>
+      <a href="#" class="nav-link" data-target="contact">Contact</a>
+    </nav>
+  </header>
 
-<main>
-  <section id="home" class="active" aria-label="Home section">
-    <img src="/storage/emulated/0/DCIM/Camera/IMG_20250409_172115_821.jpg" alt="Profile Picture" class="profile-image" />
-    <h1>Welcome to My Profile</h1>
-    <p>Hello! I am glad you are here. This is my personal profile page where you can learn more about me, my work, and get in touch.</p>
-  </section>
+  <main>
+    <section id="home" class="active" aria-label="Home Section">
+      <img class="profile-pic" src="https://i.pravatar.cc/300" alt="Profile Picture of User" />
+      <h1>Your Name</h1>
+      <p>Welcome to my personal profile! Here you can learn more about me, what I do, and how to get in touch. Feel free to explore and reach out!</p>
+    </section>
 
-  <section id="about" aria-label="About me section">
-    <h2>About Me</h2>
-    <p>
-      I am a college student at West Visayas State University – Pototan Campus, currently pursuing a Bachelor of Science in Information Systems under the Department of ICT. I am passionate about technology, data systems, and how digital solutions can improve everyday life. Beyond academics, I continuously seek opportunities to grow through hands-on experience, collaboration, and real-world problem-solving.
-    </p>
-  </section>
+    <section id="about" aria-label="About Section">
+      <h2>About Me</h2>
+      <p>Hello! I'm a passionate web developer and designer with a love for creating beautiful and functional digital experiences. I enjoy working with modern web technologies and constantly learning new skills to improve my craft.</p>
+      <p>In my free time, I enjoy photography, traveling, and exploring new cultures.</p>
+    </section>
 
-  <section id="contact" aria-label="Contact form section">
-    <h2>Contact Me</h2>
-    <form id="contactForm" novalidate>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required minlength="2" />
+    <section id="contact" aria-label="Contact Section">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required />
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required minlength="10"></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-</main>
-
-<footer>
-  &copy; 2024 My Profile. All rights reserved.
-</footer>
-
-<script src="portfolio.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
+
